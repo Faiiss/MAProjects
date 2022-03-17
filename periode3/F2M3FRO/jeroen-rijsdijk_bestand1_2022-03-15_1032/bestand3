@@ -1,0 +1,12 @@
+{
+    "personen": [
+        {
+            "naam": "Jeroen",
+            "leeftijd": 28
+        },
+        {
+            "naam": "Ton",
+            "leeftijd": 31
+        }
+    ]
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<head>
+    <title>Rijksmusuem landing page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="img/rijksicon.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="Rijksmuseum">Rijksmuseum</a>
+        <div class="menu">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="https://www.rijksmuseum.nl/nl/tickets/artikelen">Tickets</a></li>
+            <li><a href="#slider">Tentoonstellingen</a></li>
+            <li><a href="#Geschiedenis">Geschiedenis</a></li>
+            <li><a href="#">Inloggen</a></li>
+        </ul>
+        </div>  
+    </header>
+    <section id="home">
+        <img src="img/Pilars.png" id="Pilars">
+        <img src="img/Wall.png" id="Wall">
+        <img src="img/DeNachtwacht.png" id="DeNachtwacht">
+        <a href="https://www.rijksmuseum.nl/nl/tickets/artikelen" id="btn">Bezoek de Nachtwacht</a>
+    </section>
+    <section id="iNachtwacht">
+    <div class="sec">
+        <h2>De Nachtwacht</h2>
+        <p>De compagnie van kapitein Frans Banninck Cocq en luitenant Willem van Ruytenburgh maakt zich gereed om uit te marcheren, beter bekend als De Nachtwacht, 
+            ook Nachtwacht (Frans: La Ronde de nuit; Engels: Night Watch), is een schuttersstuk van de Hollandse kunstschilder Rembrandt van Rijn (1606-1669), 
+            dat in 1642 gereed kwam. Het schilderij is eigendom van de gemeente Amsterdam en behoort sinds 1808 tot de collectie van het Rijksmuseum Amsterdam.
+             Het doek toont de twee schutters uit de titel, vergezeld door andere militieleden, alsmede enkele figuranten, 
+            terwijl ze zich aan het opstellen zijn. De Nachtwacht is een van de beroemdste schilderijen ter wereld. <br><br>Het schilderij was Rembrandts bijdrage aan een project van zeven werken, 
+            zes schuttersstukken en een portret van de doelheren van de kloveniersschutters, besteld door het Amsterdamse schuttersgilde voor de grote feestzaal van de Kloveniersdoelen. 
+            Het is Rembrandts eerste en enige schuttersstuk. Vergeleken met andere doeken uit het genre is Rembrandts werk een levendige en gedurfde compositie, 
+            waarin de schutterij niet in de gebruikelijke statische opstelling poseert, maar is afgebeeld tijdens het groeperen. 
+            Het doek is een rijk werk van een barokke complexiteit, waarin realisme en symboliek vakkundig zijn gecombineerd in een meesterlijke integratie van beweging, licht en kleur,
+             in harmonie gebracht door een fijnzinnig patroon van clair-obscur. 
+            In deze aspect en vertegenwoordigt De Nachtwacht het hoogtepunt van Rembrandts schilderkunst.  </p>
+        <p></p>
+        <br><br>
+        </div>
+    </section>
+    <script>
+        let Pilars = document.getElementById('Pilars');
+        let Wall = document.getElementById('Wall');
+        let DeNachtwacht = document.getElementById('DeNachtwacht');
+
+        window.addEventListener('scroll', function(){
+            let value =  window.scrollY;
+            Pilars.style.top = value * 0.05 + 'px';
+            Wall.style.top = value * 0.11 + 'px';
+            DeNachtwacht.style.top = value * 0.18 + 'px';
+        })
+    </script>
+
+    <h2 class="stext">Tentoonstellingen</h2>
+    <div id="slider">
+        <figure>
+            <img src="img/foto1.png" alt="">
+            <img src="img/foto2.png" alt="">
+            <img src="img/foto3.png" alt="">
+            <img src="img/foto4.png" alt="">
+            <img src="img/foto5.jpg" alt="">
+        </figure>
+        <section id="itentoon">
+            <div class="sec">
+                <h2>Informatie over de Tentoonstellingen</h2>
+                <br><br>
+                <h5>De Nachtwacht</h5>
+                <p>De compagnie van kapitein Frans Banninck Cocq en luitenant Willem van Ruytenburgh maakt zich gereed om uit te marcheren, beter bekend als De Nachtwacht, 
+                    ook Nachtwacht (Frans: La Ronde de nuit; Engels: Night Watch), is een schuttersstuk van de Hollandse kunstschilder Rembrandt van Rijn (1606-1669), 
+                    dat in 1642 gereed kwam. Het schilderij is eigendom van de gemeente Amsterdam en behoort sinds 1808 tot de collectie van het Rijksmuseum Amsterdam.
+                     Het doek toont de twee schutters uit de titel, vergezeld door andere militieleden, alsmede enkele figuranten, 
+                    terwijl ze zich aan het opstellen zijn. De Nachtwacht is een van de beroemdste schilderijen ter wereld. <br><br>Het schilderij was Rembrandts bijdrage aan een project van zeven werken, 
+                    zes schuttersstukken en een portret van de doelheren van de kloveniersschutters, besteld door het Amsterdamse schuttersgilde voor de grote feestzaal van de Kloveniersdoelen. 
+                    Het is Rembrandts eerste en enige schuttersstuk. Vergeleken met andere doeken uit het genre is Rembrandts werk een levendige en gedurfde compositie, 
+                    waarin de schutterij niet in de gebruikelijke statische opstelling poseert, maar is afgebeeld tijdens het groeperen. 
+                    Het doek is een rijk werk van een barokke complexiteit, waarin realisme en symboliek vakkundig zijn gecombineerd in een meesterlijke integratie van beweging, licht en kleur,
+                     in harmonie gebracht door een fijnzinnig patroon van clair-obscur. 
+                    In deze aspect en vertegenwoordigt De Nachtwacht het hoogtepunt van Rembrandts schilderkunst.  </p>
+                    <br>
+                <h5>SLAVERNIJ</h5>
+                <p>Voor het eerst richten we onze blik op slavernij in de Nederlandse koloniale periode. Een periode van 250 jaar die een onlosmakelijk onderdeel uitmaakt van onze geschiedenis. Een periode waarin mensen tot bezit en objecten in administraties werden gemaakt. In de tentoonstelling vertellen we tien waargebeurde verhalen van mensen die hierbij betrokken waren. Tien persoonlijke verhalen over mensen die bijvoorbeeld tot slaaf waren gemaakt of slavenhouder waren. 
+                    Of over mensen die zich verzetten en mensen die in slavernij naar Nederland zijn gehaald. 
+                    Hoe zagen hun levens eruit? Hoe verhielden zij zich tot het systeem van slavernij? Konden zij eigen keuzes maken?</p>
+                <br>
+                <h5>VINCENT MENTZEL</h5>
+                <p>Vincent Mentzel (1945) behoort al jaren tot de beeldbepalende fotografen van ons land. Hij gaf letterlijk het nieuws vorm. Tijdens zijn carrière is de fotojournalistiek veranderd: van ondergeschoven kindje tot een 
+                    krachtig en zelfstandig medium met artistieke mogelijkheden. Kom en zie deze ontwikkeling aan de hand van Mentzel's foto’s.</p>
+                <br>
+                <h5>REVOLUSI!</h5>
+                <p>Ruim 20 persoonlijke verhalen vertellen hoe het ideaal van een vrij Indonesië vurig wordt nagejaagd; hoe er om gevochten wordt,
+                     hoe er wordt onderhandeld, hoe er propaganda voor wordt gevoerd en hoe de revolutie mensenlevens bepaalt.
+                     Strijders, kunstenaars, politici, diplomaten en journalisten. Iedereen heeft een andere blik. Revolusi! gaat over de Indonesische onafhankelijkheidsstrijd (1945-‘49), 
+                     gezien door 
+                     de ogen van mensen die het meemaakten. Laat je meevoeren door de objecten, de kunst en de verhalen. 
+                     Over de strijd, maar ook over de creativiteit en energie die het ontstaan van een nieuwe staat teweegbracht.</p>
+                </div>
+            </section>
+        
+    </div>
+
+    <section id="Geschiedenis">
+        <div class="sec">
+            <h2>Geschiedenis van het Rijksmusuem</h2>
+            <br><br>
+            <p>Toen het Rijksmuseum twee eeuwen geleden z’n deuren opende, was dat níet in Amsterdam. 
+                Waar dan wel? En wat had Napoleon met de verhuizing te maken? De geschiedenis van 
+                het Rijksmuseum leest als een spannend boek.</p>
+            <br><br>
+            <h5>HOE HET BEGON</h5>
+                <p>
+                    Op 19 november 1798, besloot de regering naar Frans voorbeeld een nationaal museum op te richten. Een ‘prestigeproject’ om de liefde voor het land aan te wakkeren maar ook om belangrijke voorwerpen te bewaren.
+                    Op 31 mei 1800 opende deze Nationale Kunstgalerij voor het eerst zijn deuren in Huis Ten Bosch in Den Haag. Met ruim 200 schilderijen en historische voorwerpen, 
+                    deels uit de stadhouderlijke collecties en deels uit (opgeheven) 
+                    landelijke instellingen, zoals de VOC. De eerste aankoop,
+                </p>
+            <br><br>
+            <h5>HET ‘KONINKLIJK MUSEUM’</h5>
+                <p>In 1808 stond Lodewijk Napoleon aan het roer van het Koninkrijk Holland. Hij verhuisde de collecties naar Amsterdam,
+                     de nieuwe hoofdstad. En niet naar zomaar een gebouw maar naar het Paleis op de Dam, het voormalige Amsterdamse stadhuis. 
+                     Daar werden ze samengebracht met de belangrijkste schilderijen van de stad, 
+                    waaronder de Nachtwacht van Rembrandt. In 1809 opende het Koninklijk Museum op de bovenverdieping van het paleis.
+                </p>
+            <br><br>
+            <h5>HET ‘RIJKS MUSEUM’</h5>
+            <p>
+                Met Willem I als nieuwe koning vanaf 1813, verhuisde het museum als 'Rijks Museum' samen met de uit Den Haag afkomstige 
+                nationale prentencollectie naar het Trippenhuis, een 17de-eeuws stadspaleis aan de Kloveniersburgwal. Tot ongenoegen van de directeur werden
+                 vervolgens allerlei andere collecties elders ondergebracht. Voorwerpen uit de klassieke oudheid gingen naar een nieuw Museum van Oudheden in Leiden 
+                 en voorwerpen en kunstnijverheid werden aan het inmiddels in Den Haag opgerichte Kabinet van Zeldzaamheden toegewezen.
+                 In Haarlem kwam in 1838 in Paviljoen Welgelegen een apart museum voor moderne, 19de-eeuwse kunst. In tegenstelling tot in de Napoleontijd, 
+                 kreeg het Rijks Museum weinig grote werken.
+            </p>
+            <br><br>
+            <h5>EEN NIEUW GEBOUW</h5>
+            <p>Overal in Europa werden mooie musea gebouwd. Ook Nederland verdiende een echt nationaal, trots museumgebouw. Het Trippenhuis was niet geschikt, dus mocht er iets nieuws gebouwd worden. De architect, Pierre Cuypers, had voor het Rijksmuseum een ontwerp in historische stijl gemaakt, een mengeling van gotiek en renaissance en vol van vaderlandse symboliek. Na jarenlang gedoe - velen vonden het te middeleeuws, te katholiek en te weinig écht Nederlands – startte de bouw in 1876. In 1885 werd het officieel geopend. Naast de bestaande collectie kwamen bijna alle oudere schilderijen van de Stad Amsterdam in het Rijksmuseum te hangen, zoals Rembrandts Joodse bruidje die de bankier A. van der Hoop aan de stad had nagelaten. Ook kwam er kunst uit Haarlem,
+                 kreeg een deel van het Kabinet van Zeldzaamheden een vaste plek en het prentenkabinet een eigen ruimte. Een waardige collectie, in een schitterend gebouw.</p>
+            <br><br>
+            <h5>RENOVATIE OP RENOVATIE</h5>
+            <p>In de loop der jaren is aan het Rijksmuseumgebouw veel gesleuteld. Zo werden tussen 1904 en 1916 aan de zuidwestzijde zalen aangebouwd, de huidige Philipsvleugel. In de jaren '50 en '60 werden de oorspronkelijke twee binnenhoven volgebouwd om meer zaalruimte te creëren. Na 1945 werden Vaderlandse Geschiedenis en Beeldhouwkunst & Kunstnijverheid in aparte delen van het gebouw ondergebracht. Pogingen om voor de Nederlandse geschiedenis een apart museum op te richten en zo van het Rijksmuseum een echt kunstmuseum te maken mislukten. In de jaren '50 ontstond een afdeling Aziatische Kunst als gevolg van de onderbrenging van de collectie van de Vereniging van Vrienden der Aziatische Kunst. 
+                De 70’er jaren waren booming, met bijna anderhalf miljoen bezoekers per jaar. 
+                Maar het gebouw zelf voldeed steeds minder aan de moderne eisen voor een museum. Wat nu?</p>
+            <br><br>
+            <h5>DE CIRKEL IS ROND</h5>
+            <p>Bij de laatste renovatie (2003-2013) kreeg het gebouw de oorspronkelijke structuur van Cuypers terug. Het gebouw is gemoderniseerd maar is tegelijkertijd van binnen weer meer het gebouw van Cuypers geworden, in al z’n grandeur. Schilderkunst, kunstnijverheid en geschiedenis zijn niet meer in aparte delen van het gebouw te zien. Alles vormt samen één chronologisch verhaal: het verhaal over de Nederlandse kunst en geschiedenis, van de Middeleeuwen tot en met de 20e eeuw. Meteen in 2013 trok het museum een tot dan toe ongekend aantal bezoekers, ruim twee miljoen, en dat is mede dankzij de vele toeristen tot aan de coronatijd zo gebleven. Want meer dan ooit streven we ernaar om hét museum van en voor iedereen te zijn.</p>
+            </div>
+    </section>
+    <br><br><br><br><br><br><br><br>
+    <h2 class="stext">Reviews</h2>
+    <div id="slider">
+        <figure id="Reviews">
+            <img id="reviewimg" src="img/review1.png" alt="">
+            <img id="reviewimg" src="img/review2.png" alt="">
+            <img id="reviewimg" src="img/review3.png" alt="">
+            <img id="reviewimg" src="img/review4.png" alt="">
+            <img id="reviewimg" src="img/review5.png" alt="">
+        </figure>  
+    </div>
+    <footer>
+    <div class="footer-content">
+        <h3>Contactgegevens:</h3>
+        <p>Rijksmuseum Amsterdam
+            Postbus 74888 
+            1070 DN Amsterdam 
+            <br> E-mail: info@rijksmuseum.nl 
+            Telefoonnummer: +31 (0) 20 6747 000 
+            Bezoekadres:
+            Museumstraat 1 
+            1071 XX Amsterdam 
+            <br> Vestigingsadres:
+            Hobbemastraat 20 
+            1071 ZC Amsterdam 
+            <br>
+            Openingstijden: Tijdelijk gesloten
+        </p>
+        </div>
+    <div class="footer-bottom">
+    <p>Copyright &copy;2022 Faiss, Designed by <span>Faiss</span></p>
+    </div>
+</footer>
+</body>
+</html>

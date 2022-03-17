@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+html, body{
+    min-height: 100vh;
+    max-width: auto;
+    overflow-x: hidden;
+    background: linear-gradient( #1a202c, #4f5d6e);
+    scroll-behavior: smooth;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .Rijksmuseum
+{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+     
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #1a202c;
+
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 3px 10px black;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(on top,#1a202c,transparent);
+    z-index: 10000;
+}
+#iNachtwacht{
+    background: url(img/DeNachtwachtpainting.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+#itentoon{
+        background: url(img/DeNachtwachtpainting.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200vh;
+    
+}
+#Geschiedenis{
+    background: url(img/foto8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250vh;
+
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#Wall
+{
+   
+}
+section img#Pilars
+{
+
+}
+section img#DeNachtwacht
+{
+    z-index: 0;
+}
+.menu{
+
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #c94426;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+#btn:hover, #btn:focus, #btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+.sec
+{
+    position: relative;
+    width: 100%;
+    padding: 140px;
+    background: transparent;
+}
+.sec h5{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+.stext{
+    font-size: 3.5em;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+    color: #fff;
+    text-shadow: 1px 1px 10px black;
+}
+.sec p
+{
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width:700px){
+
+}
+
+#slider{
+    margin-top: 30px;
+    margin-bottom: 10em;
+}
+
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+@keyframes slider{ 
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    } 
+    75%{
+        left: -300%;
+    }
+    80%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+
+}
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1a202c;
+    height: auto;
+    width: 100vw;
+    font-family: "fira sans";
+    padding-top: 40px;
+    color: #fff;
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 25px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footer-bottom{
+    background-color: #121720;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+#reviewimg{
+width: 50%;
+
+}

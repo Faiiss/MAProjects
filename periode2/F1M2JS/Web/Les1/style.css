@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+h1{
+    font-family: Anton;
+    text-align: center;
+    color: #ffff;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px black;
+}
+body{
+    min-height: 100vh;
+    max-width: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: linear-gradient(#696eff, #f8acff);
+}

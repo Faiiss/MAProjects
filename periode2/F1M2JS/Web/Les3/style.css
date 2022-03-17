@@ -1,0 +1,10 @@
+body{
+    background-color: blanchedalmond;
+}
+
+#container{
+    text-align: center;
+    align-items: center;
+    width: 700px;
+    margin: auto;
+}

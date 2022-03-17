@@ -1,0 +1,29 @@
+#container{
+    width:700px;
+    height:500px;
+    margin:100px auto auto auto;
+}
+
+#myImage{
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 40px;
+}
+#myTitle{
+    color: #fff;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.img-container {
+    text-align: center;
+  }
+  body{
+    background-color: #eddbd9;
+  }
+  button{
+      font-family: fantasy;
+      text-align: center;
+  }
