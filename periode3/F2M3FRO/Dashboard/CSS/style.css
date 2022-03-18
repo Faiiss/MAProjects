@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
+    font-size: 2rem;
+    background: white;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.card{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5rem;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.timertext{
+    font-size: 200%;
+
+}
+.button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 1rem;
+}
+.button--start{
+    background: #00C897;
+}
+.button--stop{
+    background: #ee0928;
+}
+.button--reset{
+    background: #b5999d;
+}
+

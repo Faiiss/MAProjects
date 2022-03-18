@@ -11,6 +11,33 @@ body{
     animation-duration: 0.8s;
 }
 
+form{
+    width: 40rem;
+    min-height: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5rem;
+    font-size: 2rem;
+    gap: 2rem;
+
+}
+form label{
+    border-bottom: 2px solid red;
+}
+input{
+    display: block;
+    width: 40rem;
+    padding: 1rem 2rem
+}
+textarea{
+    height: 30ch;
+    width: 100%;
+    font-size: 1.6rem;
+    border: 1px solid black;
+
+
+}
 .header{
     background: black;
     display: flex;
@@ -172,7 +199,7 @@ form{
 }
 
 form label{
-    border-bottom: 2px solid rgb(97, 97, 202);
+    border-bottom: 2px solid rgb(255, 45, 45);
 
    
 }
@@ -184,11 +211,12 @@ form div{
 }
 
 input{
+    border-radius: 1rem;
     display: block;
     width:30ch;
     padding: 1rem 2rem;
     font-size: 1.6rem;
-    border: 1px solid black;
+    border: 2px solid black;
     background: #EEEEEE;
 }
 
@@ -196,8 +224,8 @@ textarea{
     height: 35ch;
     width: 100%;
     font-size: 1.6rem;
-    border: 1px solid black;
-    
+    border: 2px solid black;
+    border-radius: 1rem;
     padding: 1rem 2rem;
     resize: none;
     background: #EEEEEE;
