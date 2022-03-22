@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient( #29EE99, #1AAE6E);
+    scroll-behavior: smooth;
+}
+
+.input-wrapper{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+}
+input{
+    padding: 1rem;
+    height: 3rem;
+    margin: 0 0.5rem 0 0.5rem;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+}
+header{
+    display: flex;
+    height: 20rem;
+    padding: 1.875rem;
+}
+
