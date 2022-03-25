@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mijn eerste dashboard</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="Js/main.js" defer></script>
+    <script src="Script/main.js" defer></script>
 </head>
-<body>
-    <article class="card"></article>
-    <article class="card"></article>
+<body id="js--body">
+    <article class="card card--slider">
+        <h2 id="js--rangeValue">0</h2>
+        <input id="js--slider" type="range" min="1" max="4" step="1">
+    </article>
+    <article class="card card--art">
+        <img src="" alt="">
+        <p id="js--text"></p>
+    </article>
     <article class="card card--stopwatch">
         <div>
             <span class="timertext"id="js--minutesTimer">0</span>

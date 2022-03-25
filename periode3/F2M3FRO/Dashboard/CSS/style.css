@@ -19,7 +19,9 @@ body{
     flex-wrap: wrap;
     font-family: sans-serif;
 }
-
+p{
+    font-family:fantasy;
+}
 .card{
     width: 40rem;
     height: 40rem;
@@ -27,7 +29,69 @@ body{
     box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
     flex-shrink: 0;
 }
+.card--art{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
 
+}
+
+.card--art img{
+    margin-top:5rem;
+    height: 50%;
+    width: 50%;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+}
+
+.card--art p{
+    height: 20%;
+    font-size: 75%;
+}
+
+.card--slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+}
+.card--slider > h2{
+    font-size: 400%;
+}
+
+.card--slider > input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 5rem;
+    height: 1.8rem;
+    background: linear-gradient(to right, #f4c4f3, #fc67fa);
+}
+
+.card--slider > input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #f4c4f3, #fc67fa);
+    border: none;
+    cursor: pointer;
+}
+.card--slider > input::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #f4c4f3, #fc67fa);
+    border: none;
+    cursor: pointer;
+}
 .card--stopwatch{
     display: flex;
     justify-content: center;

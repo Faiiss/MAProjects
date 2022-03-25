@@ -1,13 +1,69 @@
+@font-face {
+    font-family: 'Futura';
+    src: url(Font/Futura\ XBlk\ BT.ttf);
+}
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html, body{
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: linear-gradient( #29EE99, #1AAE6E);
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
     scroll-behavior: smooth;
+    font-size: 2rem;
+    background: linear-gradient( #29EE99, #1AAE6E);
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.tegels{
+    font-size: 2rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    font-family: sans-serif;
+
+}
+
+h2, h3, p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #29EE99;
+    font-family: 'Futura', sans-serif;
+    font-weight: 400;
+    text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+h2{
+    font-size: 6rem;
+}
+h3{
+    font-size: 8rem;
+}
+.energie{
+    font-size: 5rem;
+}
+
+.cardenergie > img{
+    margin: 4rem;
+}
+
+article{
+    background: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-wrapper{
@@ -16,9 +72,13 @@ html, body{
     align-items: center;
 }
 input{
+    flex-direction:column;
+    display: flex;
+    align-items: center;
     padding: 1rem;
     height: 3rem;
-    margin: 0 0.5rem 0 0.5rem;
+    margin-top: 2rem;
+    margin-left: 11rem;
     width: 80%;
     border: none;
     outline: none;
@@ -29,4 +89,14 @@ header{
     height: 20rem;
     padding: 1.875rem;
 }
+.card{
+    width: 55rem;
+    height: 55rem;
+    border-radius: 5rem;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
 
+.info-div{
+    display: flex;
+}
