@@ -55,15 +55,14 @@ slider.oninput = function(){
 
 /* hier begint text viaJavaScript */
 //data ophalen
-
-let data = fetch("../data.json").then(
+const paragraph = document.getElementById("js--text");
+//data ophalen
+let data = fetch("data.json").then(
     function(binnenGekomenData){
         return binnenGekomenData.json();
     }).then(
         function(echteData){
-        console.log(echteData.text);
+            paragraph.innerHTML = echteData.text;
+            //code image ophalen
         }
     );
-
-const text = document.getElementById("js--text");
-text.innerText = data.text;

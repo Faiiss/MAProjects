@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article{
+    display: grid;
+    grid-template-columns: repeat(12,8rem);
+    grid-template-rows: 30em 15rem 40rem 4rem
+}
