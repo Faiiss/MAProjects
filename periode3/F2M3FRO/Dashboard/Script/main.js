@@ -56,6 +56,7 @@ slider.oninput = function(){
 /* hier begint text viaJavaScript */
 //data ophalen
 const paragraph = document.getElementById("js--text");
+const image = document.getElementById("js--img");
 //data ophalen
 let data = fetch("data.json").then(
     function(binnenGekomenData){
@@ -63,6 +64,6 @@ let data = fetch("data.json").then(
     }).then(
         function(echteData){
             paragraph.innerHTML = echteData.text;
-            //code image ophalen
+            image.src = echteData.img;
         }
     );

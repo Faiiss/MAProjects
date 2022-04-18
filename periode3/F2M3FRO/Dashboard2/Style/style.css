@@ -32,14 +32,33 @@ body{
 .card--first{
     grid-row: 1/7;
     grid-column: 1/5;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.card--first > input{
+    width: 70%;
+    height: 40px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 2rem;
 
 }
-
 .card--second{
     grid-row: 1/9;
     grid-column: 5/13;
-}
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
 
+}
+.card--second > h2{
+    margin-top: 2rem;
+    margin-right: 50rem;
+}
 .card--third{
     grid-row: 7/13;
     grid-column: 2 /5;
@@ -79,7 +98,7 @@ body{
 
 @media screen and (max-width: 62.5rem){
     body{
-        background: blue;
+        background: #ac44ac;
     }
 
     .card--second, .card--first{
