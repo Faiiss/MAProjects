@@ -14,7 +14,7 @@ try {
 }
 
 // select all users
-$result = $conn ->query("SELECT * FROM `meterstanden` ORDER BY datum DESC");
+$result = $conn ->query("SELECT * FROM standen` ORDER BY datum DESC");
 ?>
 <!DOCTYPE html>
 <html lang="en">
