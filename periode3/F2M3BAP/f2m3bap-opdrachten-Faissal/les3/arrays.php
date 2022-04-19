@@ -10,10 +10,10 @@
 <body>
     
     <?php
-        $naam = ["Faiss", "Nabil", "Vini", "Vlad", "Neo",];
+        $naam = ["Faiss", "Nabil", "Vini", "Uday", "Neo",];
         sort($naam);
-        $naam = ["Uday", "Ahmet", "Abdi", "Adnan", "Max","Leandro"];
-        array_push($naam,"Joey","Collin");
+        $naam = ["Faiss", "Jeroen", "Adnan", "Abdi", "Max","Collin"];
+        array_push($naam,"Ahmet","Leandro");
         print_r($naam);
         array_pop($naam);
         echo count($naam);
