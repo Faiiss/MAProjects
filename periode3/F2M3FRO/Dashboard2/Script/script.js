@@ -56,5 +56,5 @@ let tvShow = fetch("https://api.tvmaze.com/shows/43819")
     .then(function (jsonDatatv) {
         console.log(jsonDatatv);
         tvName.innerText = jsonDatatv.name;
-        tvDes.innerText = jsonDatatv.summary;
+        tvDes.innerHTML = jsonDatatv.summary;
     });
