@@ -27,3 +27,64 @@ for(let i = 0; i < yellowSpheres.length; i ++){
     grabbed = false;
     }
 }
+
+
+const trees = document.getElementsByClassName("js--tree");
+let wood = 0;
+
+const kasteel = document.getElementsByClassName("js--kasteel");
+let gold = 0;
+
+const pickaxe = document.getElementById("js--pickaxe");
+const pickaxeGrabbed = document.getElementById("js--pickaxe--grabbed");
+pickaxeGrabbed.setAttribute("visible",false);
+
+pickaxe.onmouseenter = function () {
+    if (pickaxe.getAttribute("visible") === true){
+        pickaxe.setAttribute("visible",false);
+        pickaxeGrabbed.setAttribute("visible",true)
+        itemGrabbed.setAttribute("visible", false)
+        canIChopwood = true;
+        canIChopgold = true;
+    }
+}
+
+//pickaxe visi
+item.onmouseenter = function(){
+    if (item.getAttribute("visible") === true) 
+        item.setAttribute("visible", false)
+        itemGrabbed.setAttribute("visible",true)
+        grabbed = true;
+        pickaxeGrabbed.setAttribute("visible",false);
+    canIChopwood = false;
+    canIChopgold = false;
+
+}
+
+//tree
+let canIChopwood = false;
+
+for (let i = 0; i < trees.length; i++){
+    trees[i].onmouseenter = function () {
+        if (trees[i].getAttribute("visible") === true && canIChopwood === true){
+            trees[i].setAttribute("visible",false);
+            wood = wood + 1;
+            console.log(wood);
+            document.getElementById("js--wood").innerText = wood;
+        }
+    }
+}
+
+//Sand
+let canIChopgold = false;
+
+for (let i = 0; i < kasteel.length; i++){
+    kasteel[i].onmouseenter = function () {
+        if (kasteel[i].getAttribute("visible") === true && canIChopgold === true){
+            kasteel[i].setAttribute("visible",false);
+            gold = gold + 1;
+            console.log(gold);
+            document.getElementById("js--gold").innerText = gold;
+        }
+    }
+}
