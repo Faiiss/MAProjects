@@ -1,0 +1,49 @@
+dit is een arrays waar de gegevens worden opgeslagen worden of listen.
+die gegevens van arrays worden opgehaalt met het const variable labels 
+const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'Juli',
+    // 'Augustus',
+    // 'Septemper',
+    // 'Oktober',
+    // 'November',
+    // 'December'
+  ];
+
+  const data is een niewe variable die gegevens ophaalt van label,
+  maar de data variable zet ook zijn eigen gegevens zoals string op het scherm te krijgen,
+  maar het kleuren van de backgroundColor en borderColor, het metingen geven van de data als laatste.
+
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'rgb(0, 255, 0)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+const config is een variable dat aangeeft de gegevens van de data variable,
+het vraagt ook wat voor type chartjs je wilt hebben zoals line, bar, doughnut, of piu.
+daar naast geeft het ook een options waar ook iets kunt toevoegen en niewe chartjs type en zijn gegevens of nieuwe labels.
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+
+  const js--chart is nieuwe variable dat het een andere variable heeft als waarde,
+  het waarde variable dat nieuwe new chart heet, heeft een Id van de html element canvas waar door de html element kan connect met het config variable om de gegevens op het scherm te krijgen.
+
+  const js--Chart = new Chart(
+    document.getElementById('js--chart-1'),
+    config
+  );

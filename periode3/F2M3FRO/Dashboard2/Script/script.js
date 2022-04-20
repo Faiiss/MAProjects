@@ -46,6 +46,7 @@ inputField.onkeyup = function (event) {
             });
     }
 }
+//tv show
 const tvName = document.getElementById("js--tvTitle");
 const tvDes = document.getElementById("js--tvDes");
 let tvShow = fetch("https://api.tvmaze.com/shows/43819")

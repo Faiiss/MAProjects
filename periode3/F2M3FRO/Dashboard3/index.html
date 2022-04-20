@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/java.js" defer></script>
+</head>
+<body>
+     <main class="dashboard">
+         <section class="section--first">
+             <article class="card card--first">
+                <div id="Klok" class="clock" onload="showTime()"></div>
+             </article>
+             <article class="card card--second">
+                <canvas id="js--chart-1"></canvas>
+             </article>
+             <article class="card card--third">
+                <div>
+                    <span class="timertext"id="js--minutesTimer">0</span>
+                    <span class="timertext">:</span>
+                    <span class="timertext"id="js--secondsTimer">0</span>
+                </div>
+                <section class="buttonWrapper">
+                    <button class="button button--start" id="js--start">Start</button>
+                    <button class="button button--stop" id="js--stop">Stop</button>
+                    <button class="button button--reset" id="js--reset">Reset</button>
+                </section>
+             </article>
+             <article class="card card--fourth">
+                <canvas id="js--chart-4"></canvas>
+             </article>
+         </section>
+         <section class="section--second">
+            <canvas id="js--chart-2"></canvas>
+         </section>
+     </main>
+</body>
+</html>
