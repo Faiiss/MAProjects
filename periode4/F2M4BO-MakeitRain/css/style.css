@@ -52,6 +52,7 @@ header ul li a
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 header ul li a:hover
@@ -119,8 +120,15 @@ header ul li a:hover
     margin-top: 82px;
 }
 .content .imgBox img {
-    max-width: 676px;
-    margin-right: 191px;
+    max-width: 883px;
+    margin-right: -55px;
+    transition: 0.5s;
+}
+
+.content .imgBox img:hover {
+    max-width: 883px;
+    margin-right: -55px;
+    transform: translateY(-15px);
 }
 .thumb
 {
