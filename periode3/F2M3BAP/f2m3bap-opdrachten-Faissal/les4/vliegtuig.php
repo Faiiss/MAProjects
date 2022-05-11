@@ -18,12 +18,12 @@ echo $economy1. "<br>";
 $economy2 = berekenkosten(9276, 3.11, 10);
 echo $economy2. "<br>";
 
-$buisness = berekenkosten(803, 2.83,0 ,1.5);
-echo $buisness. "<br>";
+$business = berekenkosten(803, 2.83,0 ,1.5);
+echo $business. "<br>";
 
 echo "$". number_format($economy1, 2). "<br>";
 echo "$". number_format($economy2, 2). "<br>";
-echo "$". number_format($buisness, 2). "<br>";
+echo "$". number_format($business, 2). "<br>";
 
 ?>
 </body>
