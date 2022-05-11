@@ -74,6 +74,7 @@ header ul li a:hover
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
 }
 .content .textbox
 {
@@ -94,6 +95,7 @@ header ul li a:hover
     font-size: 1.7em;
     line-height: 1.2em;
     font-weight: 900;
+    transition: 0.5s;
 }
 .content .textbox p
 {
@@ -111,6 +113,12 @@ header ul li a:hover
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+.content .textbox a:hover
+{
+    transform: translateY(-5px);
 }
 .content .imgBox {
     width: 854px;
@@ -118,6 +126,7 @@ header ul li a:hover
     justify-content: flex-end;
     padding-right: 62px;
     margin-top: 82px;
+    transition: 0.5s;
 }
 .content .imgBox img {
     max-width: 883px;
@@ -165,6 +174,7 @@ header ul li a:hover
     background: #68573f;
     clip-path: circle(600px at right 700px);
     z-index:-1;
+    transition: 0.5s;
 }
 footer{
     background-color: #f7f7f7;
@@ -280,8 +290,8 @@ footer{
     }
 
     .content .imgBox img {
-        max-width: 425px;
-        margin-right: 153px;
+        max-width: 333px;
+        margin-right: 212px;
     }
     .content .textbox h2 {
         color: #333;
@@ -292,6 +302,7 @@ footer{
     .content .textbox p {
         color: #333;
         font-size: 0.7em;
+        padding: 6px;
     }
     .content .textbox {
         max-width: 100%;
@@ -299,12 +310,12 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-bottom: 677px;
+        margin-bottom: 700px;
     }
 
     .circle {
         position: absolute;
-        top: -145px;
+        top: 33px;
         left: 0;
         width: 100%;
         height: 100%;
@@ -316,7 +327,7 @@ footer{
     .thumb {
         position: absolute;
         left: 50%;
-        top: 850px;
+        top: 379px;
         /* bottom: -6px; */
         transform: translateX(-50%);
         display: flex;
@@ -404,49 +415,5 @@ footer{
         justify-content: flex-end;
         padding-right: 62px;
         margin-top: -602px;
-    }
-}
-
-@media (max-width: 1024px)
-{
-    .content .textbox h2 {
-        color: #333;
-        font-size: 2em;
-        line-height: 1.4em;
-        font-weight: 500;
-    }
-    .content .imgBox img {
-        max-width: 620px;
-        margin-right: 271px;
-    }
-
-    .thumb {
-        position: absolute;
-        left: 50%;
-        bottom: -126px;
-        transform: translateX(-50%);
-        display: flex;
-    }
-    footer {
-        background-color: #f7f7f7;
-        box-sizing: border-box;
-        position: relative;
-        text-align: center;
-        z-index: -21;
-        margin-top: 500px;
-        opacity: 1;
-        width: 100%;
-        min-height: 820px;
-    }
-
-    header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 152px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 }
