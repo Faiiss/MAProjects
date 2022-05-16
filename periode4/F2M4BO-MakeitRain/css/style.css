@@ -7,6 +7,7 @@
 }
 
 body{
+    overflow-x: hidden;
 }
 
 section
@@ -35,16 +36,16 @@ header .logo
     position: relative;
     max-width: 6rem;
 }
-header ul
+header nav
 {
     position: relative;
     display: flex;
 }
-header ul li
+header nav li
 {
     list-style: none;
 }
-header ul li a
+header nav li a
 {
     display: inline-block;
     color: #303030;
@@ -55,7 +56,7 @@ header ul li a
     transition: 0.5s;
 }
 
-header ul li a:hover
+header nav li a:hover
 {
     display: inline-block;
     background: #333;
@@ -191,9 +192,237 @@ footer{
     color: #999;
 }
 
+.containerp
+{
+    display: flex;
+    flex-direction:inherit;
+    margin-top: 5rem;
+}
+.containerp .card
+{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #2b2b2b;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.containerp .card::before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: #68573f;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.containerp .card:hover::before
+{
+    clip-path: circle(300px at 80% -20%);
+
+}
+
+.containerp .card::after
+{
+    content: 'NIKE';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.containerp .card .proImg
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px ;
+    transition: 0.5s;
+}
+
+.containerp .card:hover .proImg
+{
+    top: 10%;
+    transform: translateY(0%);
+}
+
+.containerp .card .proImg img
+{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 18rem;
+
+}
+.containerp .card .contentbox
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+.containerp .card:hover .contentbox 
+{
+    height: 190px;
+
+}
+.containerp .card .contentbox h2
+{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.containerp .card .contentbox .size,
+.containerp .card .contentbox .color
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.containerp .card:hover .contentbox .size
+{
+ opacity: 1;
+ visibility:visible;
+ transition: 0.5s;
+}
+
+.containerp .card:hover .contentbox .color
+{
+ opacity: 1;
+ visibility:visible;
+ transition: 0.5s;
+}
+
+.containerp .card .contentbox .size h3,
+.containerp .card .contentbox .color h3
+{
+    color: #fff;
+    font-weight: 100;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.containerp .card .contentbox .size span
+{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 0.8rem;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.containerp .card .contentbox .size span:hover
+{
+    background: #68573f;
+    color: #fff;
+}
+
+.containerp .card .contentbox .color span:hover
+{
+    transform: translateY(-2px);
+    transition: 0.5s;
+}
+
+.containerp .card .contentbox .color span
+{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.containerp .card .contentbox .color span:nth-child(2)
+{
+    background: #68573f;
+}
+.containerp .card .contentbox .color span:nth-child(3)
+{
+    background: #adc7dc;
+}
+.containerp .card .contentbox .color span:nth-child(4)
+{
+    background: #dec2b9;
+}
+
+.containerp .card .contentbox a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.containerp .card:hover .contentbox a
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.1s;
+}
+
+.ProductCard
+{
+    display: table;
+    margin: 0 auto;
+}
+.ProductTitle
+{
+    margin-top: 4rem;
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+li
+{
+    list-style: none;
+}
+.ProductSlider 
+{
+    display:inline
+}
+ul .ProductSlider li
+{
+    display: inline;
+}
+
+
 @media (max-width: 991px)
 {
-
+    body {
+        overflow-x: hidden;
+    }
     header
     {
         padding: 20px;
@@ -278,7 +507,7 @@ footer{
 @media (max-width: 414px){
 
     body {
-        max-width: fit-content;
+        overflow-x: hidden;
     }
 
     section {
@@ -286,7 +515,7 @@ footer{
     }
 
     header .logo {
-        max-width: 5rem;
+        max-width: 2.5rem;
     }
 
     .content .imgBox img {
@@ -327,14 +556,14 @@ footer{
     .thumb {
         position: absolute;
         left: 50%;
-        top: 379px;
+        top: 366px;
         /* bottom: -6px; */
         transform: translateX(-50%);
         display: flex;
     }
 
     .thumb li img {
-        max-width: 91px;
+        max-width: 59px;
         z-index: 900;
     }
 
@@ -345,12 +574,30 @@ footer{
         padding-right: 62px;
         margin-top: -602px;
     }
+
+    .content .textbox a {
+        display: inline-block;
+        font-size: 1.5em;
+        margin-top: 3px;
+        padding: 8px 20px;
+        background: #68573f;
+        color: #fff;
+        border-radius: 40px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    header nav {
+        display: none;
+    }
 }
 
-@media (max-width: 360px){
+@media (max-width: 375px){
 
     body {
-        max-width: fit-content;
+        overflow-x: hidden;
     }
 
     section {
@@ -398,16 +645,16 @@ footer{
     .thumb {
         position: absolute;
         left: 50%;
-        top: 681px;
-        /* bottom: -6px; */
+        top: 445px;
+        bottom: -6px;
         transform: translateX(-50%);
         display: flex;
-    }
+      }
 
-    .thumb li img {
-        max-width: 70px;
+      .thumb li img {
+        max-width: 3.9rem;
         z-index: 900;
-    }
+      }
 
     .content .imgBox {
         width: 854px;
@@ -416,4 +663,13 @@ footer{
         padding-right: 62px;
         margin-top: -602px;
     }
+
+    .ProductTitle {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
 }
+
+
+
